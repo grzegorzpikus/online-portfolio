@@ -1,0 +1,6 @@
+{
+  "name": "Chemist Portfolio & CV",
+  "description": "An interactive, modern portfolio and curriculum vitae optimized for a research chemist, featuring laboratory department highlights, publication links, and visual equipment filtering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
