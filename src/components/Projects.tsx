@@ -77,7 +77,7 @@ export default function Projects() {
             Projects
           </h2>
           <p className="mt-3 text-slate-600 dark:text-slate-400 max-w-2xl text-base">
-            Showcase of scientific projects split into advanced wet-chemistry development and data-driven computational workflows.
+            Showcase of projects split into medicinal chemistry and data-driven computational visualizations.
           </p>
         </div>
 
