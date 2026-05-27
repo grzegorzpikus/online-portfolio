@@ -30,6 +30,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
+        # We use standard npm install to set up packages
         run: npm install
 
       - name: Build
