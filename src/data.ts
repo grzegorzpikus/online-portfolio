@@ -1,11 +1,18 @@
 import { Experience, EducationItem, SkillCategory, Publication } from './types';
 import avatarImg from './components/img/avatar.jpg';
+import fotoImg from './components/img/FOTO.jpg';
+import crlLogo from './components/img/CRL.png';
+import uobLogo from './components/img/UoB.png';
+import nanotheaLogo from './components/img/Nanothea3.png';
+import ichoLogo from './components/img/ICHO.png';
+import pwLogo from './components/img/WCh PW.png';
+import essexLogo from './components/img/Essex.png';
 
 export const CHEMIST_PROFILE = {
   name: "Dr. Grzegorz Pikus",
   title: "Senior Scientist",
   specialization: "Organic synthesis and medicinal chemistry",
-  avatarUrl: avatarImg,
+  avatarUrl: fotoImg || avatarImg,
   tagline: "R&D scientist in organic and medicinal chemistry",
   about: "Senior Synthetic Organic Chemist with a PhD and over ten years of experience delivering high-impact solutions across industrial and academic research. Co-inventor on multiple patents and author of high-impact publications, specializing in the synthesis of complex small molecules, bioconjugation, and medicinal chemistry projects. A skilled researcher with a proven ability to translate scientific data into synthetic strategies across diverse project levels. Expert at optimising chemical processes and applying novel solutions (like photochemistry) to elevate project efficiency, innovation, and the overall impact on scientific research. Highly adaptable and organised, with a track record of meeting demanding deadlines while maintaining the highest scientific standards.",
   email: "grzegorz.pikus@gmail.com",
@@ -22,6 +29,7 @@ export const EXPERIENCES: Experience[] = [
     company: "Charles River Laboratories",
     location: "Harlow, UK",
     period: "March 2022 - January 2026",
+    logoUrl: crlLogo,
     hasWetLab: true,
     wetLabClassificationTitle: "Research and Development of drug candidates across multiple discovery projects.",
     wetLabClassificationDesc: "Medicinal Chemist in Small Drug Discovery Department",
@@ -54,6 +62,7 @@ export const EXPERIENCES: Experience[] = [
     company: "University of Bristol, School of Chemistry",
     location: "Bristol, UK",
     period: "June 2019 - June 2021",
+    logoUrl: uobLogo,
     hasWetLab: true,
     wetLabClassificationDesc: "Academic Organic Synthesis and Organometallic Catalysis Labs",
     description: [
@@ -99,6 +108,7 @@ export const EXPERIENCES: Experience[] = [
     company: "NanoThea Radiopharmaceuticals S.A.",
     location: "Warsaw, Poland",
     period: "January 2017 – May 2019",
+    logoUrl: nanotheaLogo,
     hasWetLab: true,
     wetLabClassificationDesc: "Organic Synthesis and Radiopharmaceutical Formulations Lab",
     description: [
@@ -127,6 +137,7 @@ export const EDUCATION_ITEMS: EducationItem[] = [
     degree: "PhD in Organic Chemistry",
     institution: "Institute of Organic Chemistry, Polish Academy of Science, Warsaw",
     year: "2016",
+    logoUrl: ichoLogo,
     thesisTitle: "Static combinatorial chemistry as a method for synthesis of macrocyclic receptors of cations and anions.",
     thesisUrl: "https://rcin.org.pl/Content/58895/WA336_78707_O-B384-16_Pikus.pdf",
     supervisor: "Prof. Janusz Jurczak",
@@ -137,15 +148,17 @@ export const EDUCATION_ITEMS: EducationItem[] = [
     degree: "M.Sc. in Chemical Technology",
     institution: "Warsaw University of Technology, Faculty of Chemical Technology, Warsaw",
     year: "2011",
+    logoUrl: pwLogo,
     thesisTitle: "Development of a method for the synthesis of 3,5-bis(2-cyanoisopropyl)toluene",
     supervisor: "Prof. Michał Fedoryński",
     details: "Focus area: Application of the PTC technique in tetraalkylation using methyl chloride gas."
   },
-    {
+  {
     id: "edu-3",
     degree: "Postgraduate Certificate in Computer Science",
     institution: "University of Essex, online study",
     year: "2023",
+    logoUrl: essexLogo,
     details: "The certificate granted by completing modules: Launching into Computer Science, Object Oriented Programming and Secure Software Development"
   }
 ];

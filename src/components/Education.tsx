@@ -1,50 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { EDUCATION_ITEMS } from '../data';
-import { GraduationCap, Calendar, Award, UserCheck, BookOpen, Upload, Camera, Trash2 } from 'lucide-react';
+import { GraduationCap, UserCheck, BookOpen } from 'lucide-react';
 
 export default function Education() {
-  const [avatars, setAvatars] = useState<Record<string, string>>({});
-
-  useEffect(() => {
-    const loaded: Record<string, string> = {};
-    EDUCATION_ITEMS.forEach(item => {
-      const saved = localStorage.getItem(`edu-avatar-${item.id}`);
-      if (saved) {
-        loaded[item.id] = saved;
-      }
-    });
-    setAvatars(loaded);
-  }, []);
-
-  const handleFileChange = (itemId: string, e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      if (file.size > 2 * 1024 * 1024) {
-        alert("Please upload an image smaller than 2MB.");
-        return;
-      }
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        const result = event.target?.result as string;
-        if (result) {
-          localStorage.setItem(`edu-avatar-${itemId}`, result);
-          setAvatars(prev => ({ ...prev, [itemId]: result }));
-        }
-      };
-      reader.readAsDataURL(file);
-    }
-  };
-
-  const removeAvatar = (itemId: string, e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    localStorage.removeItem(`edu-avatar-${itemId}`);
-    setAvatars(prev => {
-      const next = { ...prev };
-      delete next[itemId];
-      return next;
-    });
-  };
 
   return (
     <section id="education" className="py-20 border-t border-slate-100 dark:border-slate-800 transition-colors duration-300">
@@ -75,49 +33,21 @@ export default function Education() {
                 {/* Header Row */}
                 <div className="p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
                   <div className="flex items-center gap-4 flex-1">
-                    {/* Uploadable Avatar Container */}
-                    <div className="relative group shrink-0">
-                      <label
-                        htmlFor={`file-upload-${item.id}`}
-                        className="relative flex flex-col items-center justify-center w-16 h-16 rounded-full border-2 border-dashed border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/40 cursor-pointer overflow-hidden group hover:border-emerald-500 hover:bg-emerald-50/25 dark:hover:border-emerald-400 dark:hover:bg-emerald-950/10 transition-all duration-300 shadow-xs"
-                      >
-                        {avatars[item.id] ? (
-                          <>
-                            <img
-                              src={avatars[item.id]}
-                              alt={`${item.institution} Logo`}
-                              className="w-full h-full object-cover"
-                            />
-                            {/* Hover overlay */}
-                            <div className="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-[9px] font-medium text-white transition-opacity duration-200">
-                              <Camera className="w-3.5 h-3.5 mb-0.5" />
-                              <span>Change</span>
-                            </div>
-                          </>
-                        ) : (
-                          <div className="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 group-hover:text-emerald-500 dark:group-hover:text-emerald-400 text-center p-1.5">
-                            <Upload className="w-4 h-4 mb-1" />
-                            <span className="text-[9px] font-sans font-medium leading-none">Add Logo</span>
-                          </div>
-                        )}
-                      </label>
-                      <input
-                        id={`file-upload-${item.id}`}
-                        type="file"
-                        accept="image/*"
-                        className="hidden"
-                        onChange={(e) => handleFileChange(item.id, e)}
-                      />
-
-                      {/* Remove button if avatar exists */}
-                      {avatars[item.id] && (
-                        <button
-                          onClick={(e) => removeAvatar(item.id, e)}
-                          title="Remove logo"
-                          className="absolute -top-1 -right-1 p-1 bg-red-100 hover:bg-red-200 dark:bg-red-950/80 dark:hover:bg-red-900 text-red-600 dark:text-red-450 rounded-full shadow-xs transition-transform hover:scale-110 cursor-pointer z-10 animate-fade-in"
-                        >
-                          <Trash2 className="w-2.5 h-2.5" />
-                        </button>
+                    {/* Institute Logo */}
+                    <div className="shrink-0">
+                      {item.logoUrl ? (
+                        <div className="w-16 h-16 rounded-full overflow-hidden bg-white border border-slate-200 dark:border-slate-800/80 flex items-center justify-center p-1.5 shadow-sm">
+                          <img
+                            src={item.logoUrl}
+                            alt={`${item.institution} Logo`}
+                            className="w-full h-full object-contain"
+                            referrerPolicy="no-referrer"
+                          />
+                        </div>
+                      ) : (
+                        <div className="w-16 h-16 rounded-full bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800/80 text-slate-400 dark:text-slate-500 flex items-center justify-center p-3 shadow-sm">
+                          <GraduationCap className="w-6 h-6 text-emerald-550 shrink-0" />
+                        </div>
                       )}
                     </div>
 

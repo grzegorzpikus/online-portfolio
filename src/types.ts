@@ -9,6 +9,7 @@ export interface Experience {
   company: string;
   location: string;
   period: string;
+  logoUrl?: string;
   hasWetLab: boolean; // Explicit company lab classification requested
   wetLabClassificationTitle?: string;
   wetLabClassificationDesc: string;
@@ -26,6 +27,7 @@ export interface EducationItem {
   institution: string;
   year: string;
   gpa?: string;
+  logoUrl?: string;
   thesisTitle?: string;
   thesisUrl?: string;
   advisor?: string;

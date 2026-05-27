@@ -1,44 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { Mail, Linkedin, Github, FileText, MapPin, Award, Dna, Camera, Trash2 } from 'lucide-react';
+import React from 'react';
+import { Mail, Linkedin, Github, FileText, MapPin, Award, Dna } from 'lucide-react';
 import { CHEMIST_PROFILE } from '../data';
 import { motion } from 'motion/react';
 
 export default function Hero() {
   const profile = CHEMIST_PROFILE;
-  const [avatar, setAvatar] = useState<string | null>(null);
-
-  useEffect(() => {
-    const saved = localStorage.getItem('hero-avatar');
-    if (saved) {
-      setAvatar(saved);
-    }
-  }, []);
-
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      if (file.size > 2 * 1024 * 1024) {
-        alert("Please upload an image smaller than 2MB.");
-        return;
-      }
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        const result = event.target?.result as string;
-        if (result) {
-          localStorage.setItem('hero-avatar', result);
-          setAvatar(result);
-        }
-      };
-      reader.readAsDataURL(file);
-    }
-  };
-
-  const removeAvatar = (e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    localStorage.removeItem('hero-avatar');
-    setAvatar(null);
-  };
 
   return (
     <section id="about" className="py-24 relative overflow-hidden transition-colors duration-300">
@@ -68,28 +34,11 @@ export default function Hero() {
 
               {/* Main Avatar Container */}
               <div className="w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl relative group">
-                <label htmlFor="hero-upload" className="block w-full h-full cursor-pointer relative">
-                  <img
-                    src={avatar || profile.avatarUrl}
-                    alt={profile.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
-                  />
-                  
-                  {/* Hover overlay with Camera */}
-                  <div className="absolute inset-0 bg-slate-100/10 dark:bg-slate-950/40 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-xs font-semibold text-white transition-opacity duration-300 gap-1.5 z-10"
-                       style={{ backgroundImage: 'linear-gradient(to top, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.45))' }}>
-                    <Camera className="w-6 h-6 animate-bounce" />
-                    <span className="font-sans text-sm tracking-wide">Change Photo</span>
-                  </div>
-                </label>
-
-                <input
-                  id="hero-upload"
-                  type="file"
-                  accept="image/*"
-                  className="hidden"
-                  onChange={handleFileChange}
+                <img
+                  src={profile.avatarUrl}
+                  alt={profile.name}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  referrerPolicy="no-referrer"
                 />
                 
                 {/* Lab Overlay Card */}
@@ -99,17 +48,6 @@ export default function Hero() {
                   </span>
                   <p className="text-[11px] text-slate-300 mt-0.5">ORCID ID: {profile.orcid.split('/').pop()}</p>
                 </div>
-
-                {/* Remove button if custom avatar exists */}
-                {avatar && (
-                  <button
-                    onClick={removeAvatar}
-                    title="Reset to default picture"
-                    className="absolute top-3 right-3 p-1.5 bg-red-100 hover:bg-red-200 dark:bg-red-950/80 dark:hover:bg-red-900 text-red-600 dark:text-red-400 rounded-full shadow-md transition-transform hover:scale-110 cursor-pointer z-35"
-                  >
-                    <Trash2 className="w-4 h-4" />
-                  </button>
-                )}
               </div>
             </div>
           </div>
