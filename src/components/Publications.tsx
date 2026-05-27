@@ -27,7 +27,7 @@ export default function Publications() {
             Articles & Patents
           </h2>
           <p className="mt-3 text-slate-600 dark:text-slate-400 max-w-2xl text-base">
-            Reverse-chronological compilation of peer-reviewed articles and patent.
+            Reverse-chronological compilation of peer-reviewed articles and patents.
           </p>
         </div>
 

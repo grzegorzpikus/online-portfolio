@@ -237,7 +237,7 @@ export default function App() {
             {/* Career Timeline Experience, with Wet-chemistry badge mapping */}
             <Experience />
 
-            {/* Educational Credentials, expandable thesis thesis */}
+            {/* Educational Credentials, expandable thesis */}
             <Education />
 
             {/* Skills categorization, with quick search and safety highlighting */}

@@ -54,7 +54,7 @@ export const EXPERIENCES: Experience[] = [
       "Analysis of SAR and ADME data for drug candidate design",
       "Performing air or/and water sensitive experiments"
     ],
-    methodologiesTitle: "Synthetic Methodologies and Rsearch activities"
+    methodologiesTitle: "Synthetic Methodologies and Research activities"
   },
   {
     id: "exp-2",
@@ -67,7 +67,7 @@ export const EXPERIENCES: Experience[] = [
     wetLabClassificationDesc: "Academic Organic Synthesis and Organometallic Catalysis Labs",
     description: [
       "Collaborated with Prof. Tim Gallagher on a high-impact project focused on the mechanism of action and key interactions of Varenicline derivatives with nicotinic receptors.",
-      "Designed and successfully synthesized a series of nicotinic ligands to explore structure-activiti relationship, that underwent extensive testing.",
+      "Designed and successfully synthesized a series of nicotinic ligands to explore the structure-activity relationship, which underwent extensive testing.",
       "Developed a high-yielding borylation via Pd-catalysed C–H activation of biaryls, significantly improving synthetic access to key motor precursors for a molecular machine project.",
       "Independently designed and realised an out-of-equilibrium Pd-catalysed boronic ester system — a critical proof-of-concept milestone for autonomous unidirectional motion."
     ],
@@ -83,23 +83,22 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Collins’ group",
         bullets: [
-          "Participated in a challenging and ambitious project of autonomous unidirectional motion around C-C bons powered by chemical fuel.",
-          "Developed a high-yielding borylation via Pd-catalysed C–H activation of 2-arylopyridines, significantly improving synthetic access to key motor precursors for a molecular machine project.",
+          "Participated in a challenging and ambitious project of autonomous unidirectional motion around C-C bonds powered by chemical fuel.",
+          "Developed a high-yielding borylation via Pd-catalysed C–H activation of 2-arylpyridines, significantly improving synthetic access to key motor precursors for a molecular machine project.",
           "Designed and obtained an out-of-equilibrium system of formation and decomposition of boronic esters via Pd-catalysed C-H activation and borylation — a critical proof-of-concept milestone for autonomous unidirectional motion."
         ]
       }
     ],
     instrumentation: [
-      "Vacuum Atmospheres Nexus Glovebox (argon-atmosphere)",
-      "EPR (Electron Paramagnetic Resonance) spectrometer (spin trapping)",
-      "Varian Inova 400 MHz solid-state and solution NMR",
-      "EvoluChem PhotoRedox Box arrays with tunable LED wavelengths"
+      "Bruker and Varian 400 MHz instruments",
+      "TLC-MS",
+      "Anhydrous Engineering Solvent Purification System (SPS)"
     ],
     methodologies: [
-      "Photoredox Catalyst Design",
-      "Organometallic Reaction Mechanism Investigation",
-      "Single-Crystal X-ray Diffraction sample prep",
-      "Mechanochemical ball-milling synthesis"
+      "Metal catalysis (Pd, Ir, Rh)",
+      "Borylation reactions via C-H activation",
+      "Mechanistic studies",
+      "Multistep synthesis and troubleshooting"
     ]
   },
   {
@@ -118,10 +117,9 @@ export const EXPERIENCES: Experience[] = [
       "Managed an organic chemistry laboratory, overseeing equipment procurement and chemical supply to sustain high-throughput research operations."
     ],
     instrumentation: [
-      "Malvern for Zeta potential mesurement",
+      "Malvern for Zeta potential measurement",
       "NanoSight",
-      "UV-Visible Spectrophotometery",
-      "Polarmeter & Rudolph Autopol III polarimeter"
+      "UV-Visible Spectrophotometry",
     ],
     methodologies: [
       "Aqueous dialysis of high-molecular-weight materials",
@@ -135,7 +133,7 @@ export const EDUCATION_ITEMS: EducationItem[] = [
   {
     id: "edu-1",
     degree: "PhD in Organic Chemistry",
-    institution: "Institute of Organic Chemistry, Polish Academy of Science, Warsaw",
+    institution: "Institute of Organic Chemistry, Polish Academy of Sciences, Warsaw",
     year: "2016",
     logoUrl: ichoLogo,
     thesisTitle: "Static combinatorial chemistry as a method for synthesis of macrocyclic receptors of cations and anions.",
@@ -167,24 +165,23 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: "Synthesis Technology & Reaction Design",
     skills: [
-      { name: "Organometallic Synthesis", level: 90 },
+      { name: "Organometallic Synthesis", level: 80 },
       { name: "Metal catalysis", level: 95 },
       { name: "Reaction optimisation", level: 82 },
       { name: "Air/water-Sensitive reactions", level: 85 },
-      { name: "High-Throughput Synthesis", level: 85 },
+      { name: "High-Throughput Synthesis", level: 65 },
       { name: "Macrocyclisation", level: 90 },
-      { name: "Reaction optimisation", level: 82 }
+      { name: "Reaction optimisation", level: 85 }
     ]
   },
   {
     title: "Analytical & Structural Characterization",
     skills: [
-      { name: "1D/2D NMR Spectroscopy (Varian, Bruker)", level: 98 },
-      { name: "LC-MS experimentation and troubleshooting", level: 92 },
+      { name: "1D/2D NMR Spectroscopy (Varian, Bruker)", level: 96 },
+      { name: "LC-MS experimentation and troubleshooting", level: 90 },
       { name: "Preparative, Analytical and chiral HPLC", level: 90 },
       { name: "FT-IR & UV-Vis Spectrophotometry", level: 75 },
-      { name: "X-ray Crystallography Structure Solving", level: 40 },
-      { name: "Karl Fischer & Moisture Titration", level: 85 }
+      { name: "X-ray Crystallography Structure Solving", level: 40 }
     ]
   },
   {
@@ -193,9 +190,8 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Chemdraw Ultra & Professional Suites", level: 100 },
       { name: "Schrödinger Suites (Maestro & Docking)", level: 50 },
       { name: "MestReNova NMR Data Processing", level: 80 },
-      { name: "Density Functional Theory (Gaussian / ORCA)", level: 80 },
-      { name: "Python for Cheminformatics (RDKit, Pandas)", level: 30 },
-      { name: "PyMOL & Chimera Molecular Renderers", level: 90 }
+      { name: "MS Office (documents, presentations, posters)", level: 95 },
+      { name: "Python for Cheminformatics (RDKit, Pandas)", level: 30 }
     ]
   }
 ];
@@ -204,12 +200,12 @@ export const SOFT_SKILLS = [
   {
     name: "Cross-functional Collaboration",
     percentage: 98,
-    description: "Collaboration across disciplines in multiple drug discovery and medicinal tehcnology projects."
+    description: "Collaboration across disciplines in multiple drug discovery and medicinal technology projects."
   },
   {
     name: "Lab Safety Leadership & Compliance",
     percentage: 96,
-    description: "Performing laboratory duties with the highest standards of safety. Contributor to COSHH and Risk Assesment documentation."
+    description: "Performing laboratory duties with the highest standards of safety. Contributor to COSHH and Risk Assessment documentation."
   },
   {
     name: "Technical Writing & Patents",
@@ -282,7 +278,7 @@ export const PUBLICATIONS: Publication[] = [
   {
     id: "pub-6",
     title: "The influence of high pressure on static combinatorial libraries of chiral BINOL-based macrocyclic amides",
-    authors: "Pikus G., Tyszka-Gumowska A., Jurczak J.",
+    authors: "Pikus G., Tyszka-Gumkowska A., Jurczak J.",
     journal: "Tetrahedron",
     year: "2020",
     citation: "Tetrahedron, 2020, 76, 131438",

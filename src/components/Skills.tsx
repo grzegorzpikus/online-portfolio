@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { SKILL_CATEGORIES, SOFT_SKILLS } from '../data';
-import { Award, CheckCircle, Cpu, Hammer, Search, ShieldAlert, Sparkles, Terminal } from 'lucide-react';
+import { Award, CheckCircle, Cpu, Hammer, Search, ShieldAlert, Sparkles, Terminal, FlaskConical, Microscope, Monitor } from 'lucide-react';
 
 export default function Skills() {
   const [selectedCategory, setSelectedCategory] = useState<number | null>(null); // null means show all
@@ -63,7 +63,7 @@ export default function Skills() {
                     : 'text-slate-600 hover:text-slate-950 dark:text-slate-400 dark:hover:text-white'
                 }`}
               >
-                Category {idx + 1}
+                {idx === 0 ? 'Synthetic' : idx === 1 ? 'Analytical' : 'Computational'}
               </button>
             ))}
           </div>
@@ -93,8 +93,14 @@ export default function Skills() {
                   <h3 className="text-sm font-bold text-slate-950 dark:text-white uppercase font-mono tracking-wider">
                     {cat.title}
                   </h3>
-                  <span className="text-[10px] bg-indigo-50/60 dark:bg-indigo-950/30 text-indigo-600 dark:text-indigo-400 px-2 py-0.5 rounded font-mono font-bold">
-                    CAT {cat.originalIndex + 1}
+                  <span className="p-1.5 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 rounded-lg shadow-sm border border-emerald-100 dark:border-emerald-900/30" title={cat.originalIndex === 0 ? "Synthetic" : cat.originalIndex === 1 ? "Analytical" : "Computational"}>
+                    {cat.originalIndex === 0 ? (
+                      <FlaskConical className="w-4 h-4" />
+                    ) : cat.originalIndex === 1 ? (
+                      <Microscope className="w-4 h-4" />
+                    ) : (
+                      <Monitor className="w-4 h-4" />
+                    )}
                   </span>
                 </div>
 
