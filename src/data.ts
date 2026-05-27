@@ -36,7 +36,7 @@ export const EXPERIENCES: Experience[] = [
     description: [
       "Successfully delivered an extensive array of synthetic targets for medicinal chemistry projects, interpreting SAR and ADME data.",
       "Skilled in synthesis on mg to kg scale, delivering materials with high purity for biological studies.",
-      "Used advanced synthetic skills, including specialised knowledge of synthetic chemistry and photochemistry, to significantly shorten synthetic routes and overcome challenges in small molecule synthesis.",
+      "Applied advanced synthetic skills, including specialised knowledge of synthetic chemistry and photochemistry, to significantly shorten synthetic routes and overcome challenges in small molecule synthesis.",
       "Actively contributed as a member of the Synthetic Innovation Team, expanding the department's internal toolkit by implementing modern solutions such as photocatalysis and mentoring others to use this innovation.",
       "Demonstrated expert-level proficiency in purification (HPLC, chromatography, crystallisation), and characterization (LCMS, NMR, HRMS) of diverse chemical entities.",
       "Contributions to lead optimisation and medicinal chemistry projects validated by multiple published and ongoing patents.",
@@ -83,7 +83,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Collins’ group",
         bullets: [
-          "Participated in a challenging and ambitious project of autonomous unidirectional motion around C-C bonds powered by chemical fuel.",
+          "Participated in a challenging and ambitious project of autonomous unidirectional motion around C-C bonds powered by chemical fuel in Dr Beatrice Collins' group.",
           "Developed a high-yielding borylation via Pd-catalysed C–H activation of 2-arylpyridines, significantly improving synthetic access to key motor precursors for a molecular machine project.",
           "Designed and obtained an out-of-equilibrium system of formation and decomposition of boronic esters via Pd-catalysed C-H activation and borylation — a critical proof-of-concept milestone for autonomous unidirectional motion."
         ]
@@ -143,7 +143,7 @@ export const EDUCATION_ITEMS: EducationItem[] = [
   },
   {
     id: "edu-2",
-    degree: "M.Sc. in Chemical Technology",
+    degree: "MSc in Chemical Technology",
     institution: "Warsaw University of Technology, Faculty of Chemical Technology, Warsaw",
     year: "2011",
     logoUrl: pwLogo,
