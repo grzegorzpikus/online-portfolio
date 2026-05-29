@@ -76,7 +76,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Gallagher’s group",
         bullets: [
-          "Collaborated with Prof. Tim Gallagher on a high-impact project focused on the mechanism of action and key interactions of Varenicline derivatives with nicotinic receptors.",
+          "Collaborated with Prof. Tim Gallagher on a high-impact project focusing on the mechanism of action and key interactions of Varenicline derivatives with nicotinic receptors.",
           "Designed and successfully synthesized a series of nicotinic ligands to study their structure-activity relationship, that underwent extensive testing.",
           "Performed multi-step synthesis and demonstrated a strong ability to solve problems and overcome synthetic challenges.",
           "Exploration of Ir-catalysed borylation in cytisine modifications"
@@ -85,9 +85,9 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Collins’ group",
         bullets: [
-          "Participated in a challenging and ambitious project of autonomous unidirectional motion around C-C bonds powered by chemical fuel in Dr Beatrice Collins' group.",
+          "Participated in a challenging and ambitious project of autonomous unidirectional molecular motors powered by chemical fuel in Dr Beatrice Collins' group.",
           "Developed a high-yielding borylation via Pd-catalysed C–H activation of 2-arylpyridines, significantly improving synthetic access to key motor precursors for a molecular machine project.",
-          "Designed and obtained an out-of-equilibrium system of formation and decomposition of boronic esters via Pd-catalysed C-H activation and borylation — a critical proof-of-concept milestone for autonomous unidirectional motion.",
+          "Designed and obtained an out-of-equilibrium system of formation and decomposition of boronic esters via Pd-catalysed C-H activation and borylation — a critical proof-of-concept for autonomous unidirectional motion.",
           "Demonstrated the ability to work independently and advance projects by introducing innovative ideas and solutions."
         ]
       }
@@ -117,6 +117,7 @@ export const EXPERIENCES: Experience[] = [
       "Delivered synthetic polysaccharide-based nanoparticles modified with DOTA chelators and PSMA-inhibitors via bioconjugation techniques, to develop a targeted radiopharmaceutical platform for early diagnosis of cancer.",
       "Designed and delivered a series of low-molecular-weight PSMA-inhibitors validated in close collaboration with a multidisciplinary team.",
       "Synthesis of novel tirapazamine-derivatives as radiosensitizers",
+      "Collaboration in a multidisciplinary team to evaluate synthesized materials in vitro.",
       "Managed an organic chemistry laboratory, overseeing equipment procurement and chemical supply to sustain high-throughput research operations."
     ],
     instrumentation: [
@@ -127,7 +128,7 @@ export const EXPERIENCES: Experience[] = [
     methodologies: [
       "Aqueous dialysis of high-molecular-weight materials",
       "Bioconjugation",
-      "Exploration of PSMA-targeted medicinal technologies"
+      "Methodological studies on the oxidation of tirapazamine derivatives"
     ]
   }
 ];
