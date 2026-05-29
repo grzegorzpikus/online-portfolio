@@ -40,6 +40,7 @@ export const EXPERIENCES: Experience[] = [
       "Actively contributed as a member of the Synthetic Innovation Team, expanding the department's internal toolkit by implementing modern solutions such as photocatalysis and mentoring others to use this innovation.",
       "Demonstrated expert-level proficiency in purification (HPLC, chromatography, crystallisation), and characterization (LCMS, NMR, HRMS) of diverse chemical entities.",
       "Contributions to lead optimisation and medicinal chemistry projects validated by multiple published and ongoing patents.",
+      "An active member of the working community, contributing to a variety of activities and initiatives, including the Synthetic Wiki, Continuous Improvement, and Biocatalysis Teams.",
       "Mentoring placement students and junior colleagues and conducting training sessions in organic chemistry, synthesis and reaction mechanisms."
     ],
     instrumentation: [
@@ -77,6 +78,7 @@ export const EXPERIENCES: Experience[] = [
         bullets: [
           "Collaborated with Prof. Tim Gallagher on a high-impact project focused on the mechanism of action and key interactions of Varenicline derivatives with nicotinic receptors.",
           "Designed and successfully synthesized a series of nicotinic ligands to study their structure-activity relationship, that underwent extensive testing.",
+          "Performed multi-step synthesis and demonstrated a strong ability to solve problems and overcome synthetic challenges.",
           "Exploration of Ir-catalysed borylation in cytisine modifications"
         ]
       },
@@ -85,7 +87,8 @@ export const EXPERIENCES: Experience[] = [
         bullets: [
           "Participated in a challenging and ambitious project of autonomous unidirectional motion around C-C bonds powered by chemical fuel in Dr Beatrice Collins' group.",
           "Developed a high-yielding borylation via Pd-catalysed C–H activation of 2-arylpyridines, significantly improving synthetic access to key motor precursors for a molecular machine project.",
-          "Designed and obtained an out-of-equilibrium system of formation and decomposition of boronic esters via Pd-catalysed C-H activation and borylation — a critical proof-of-concept milestone for autonomous unidirectional motion."
+          "Designed and obtained an out-of-equilibrium system of formation and decomposition of boronic esters via Pd-catalysed C-H activation and borylation — a critical proof-of-concept milestone for autonomous unidirectional motion.",
+          "Demonstrated the ability to work independently and advance projects by introducing innovative ideas and solutions."
         ]
       }
     ],
