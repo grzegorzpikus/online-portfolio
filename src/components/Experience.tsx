@@ -131,7 +131,7 @@ export default function Experience() {
                     </div>
                     
                     <div className="flex flex-col items-start sm:items-end gap-1.5 self-stretch sm:self-auto shrink-0 pl-20 sm:pl-0">
-                      <span className="font-mono text-xs font-semibold px-3 py-1 bg-slate-100 dark:bg-slate-850 text-slate-700 dark:text-slate-300 rounded-lg whitespace-nowrap">
+                      <span className="font-mono text-xs font-semibold px-3 py-1 bg-slate-100 dark:bg-slate-850 text-slate-700 dark:text-black rounded-lg whitespace-nowrap">
                         {exp.period}
                       </span>
                     </div>
