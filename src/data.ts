@@ -9,7 +9,7 @@ import pwLogo from './components/img/WCh PW.png';
 import essexLogo from './components/img/Essex.png';
 
 export const CHEMIST_PROFILE = {
-  name: "Dr. Grzegorz Pikus",
+  name: "Dr Grzegorz Pikus",
   title: "Senior Scientist",
   specialization: "Organic synthesis and medicinal chemistry",
   avatarUrl: fotoImg || avatarImg,
@@ -170,21 +170,21 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     title: "Synthesis Technology & Reaction Design",
     skills: [
       { name: "Organometallic Synthesis", level: 80 },
-      { name: "Metal catalysis", level: 95 },
-      { name: "Reaction optimisation", level: 82 },
-      { name: "Air/water-Sensitive reactions", level: 85 },
-      { name: "High-Throughput Synthesis", level: 65 },
+      { name: "Metal catalysis", level: 80 },
+      { name: "Reaction optimisation", level: 80 },
+      { name: "Air/water-Sensitive reactions", level: 90 },
+      { name: "High-Throughput Synthesis", level: 40 },
       { name: "Macrocyclisation", level: 90 },
-      { name: "Reaction optimisation", level: 85 }
+      { name: "Photocatalysis", level: 70 }
     ]
   },
   {
     title: "Analytical & Structural Characterization",
     skills: [
-      { name: "1D/2D NMR Spectroscopy (Varian, Bruker)", level: 96 },
-      { name: "LC-MS experimentation and troubleshooting", level: 90 },
-      { name: "Preparative, Analytical and chiral HPLC", level: 90 },
-      { name: "FT-IR & UV-Vis Spectrophotometry", level: 75 },
+      { name: "1D/2D NMR Spectroscopy (Varian, Bruker)", level: 80 },
+      { name: "LC-MS experimentation and troubleshooting", level: 80 },
+      { name: "Preparative, Analytical and chiral HPLC", level: 80 },
+      { name: "FT-IR & UV-Vis Spectrophotometry", level: 60 },
       { name: "X-ray Crystallography Structure Solving", level: 40 }
     ]
   },
@@ -194,7 +194,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Chemdraw Ultra & Professional Suites", level: 100 },
       { name: "Schrödinger Suites (Maestro & Docking)", level: 50 },
       { name: "MestReNova NMR Data Processing", level: 80 },
-      { name: "MS Office (documents, presentations, posters)", level: 95 },
+      { name: "MS Office (documents, presentations, posters)", level: 80 },
       { name: "Python for Cheminformatics (RDKit, Pandas)", level: 30 }
     ]
   }
