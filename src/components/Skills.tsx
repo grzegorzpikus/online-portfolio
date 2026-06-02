@@ -1,6 +1,21 @@
 import { useState } from 'react';
 import { SKILL_CATEGORIES, SOFT_SKILLS } from '../data';
-import { Award, CheckCircle, Cpu, Hammer, Search, ShieldAlert, Sparkles, Terminal, FlaskConical, Microscope, Monitor } from 'lucide-react';
+import { Award, CheckCircle, Cpu, Hammer, Search, ShieldAlert, Sparkles, FlaskConical, Microscope, Monitor, Handshake, Plus, Pen, BookOpen } from 'lucide-react';
+
+const getSoftSkillIcon = (name: string) => {
+  switch (name) {
+    case "Cross-functional Collaboration":
+      return <Handshake className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />;
+    case "Lab Safety Leadership & Compliance":
+      return <Plus className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />;
+    case "Technical Writing & Patents":
+      return <Pen className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />;
+    case "Teaching and tutoring":
+      return <BookOpen className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />;
+    default:
+      return null;
+  }
+};
 
 export default function Skills() {
   const [selectedCategory, setSelectedCategory] = useState<number | null>(null); // null means show all
@@ -125,11 +140,6 @@ export default function Skills() {
                   ))}
                 </div>
               </div>
-
-              {/* Skill bottom badge */}
-              <div className="mt-6 pt-4 border-t border-slate-50 dark:border-slate-850/60 text-[11px] font-mono text-slate-400 flex items-center gap-1">
-                <Terminal className="w-3.5 h-3.5 text-emerald-500" /> Active R&D validation rating
-              </div>
             </div>
           ))}
 
@@ -165,12 +175,9 @@ export default function Skills() {
               >
                 <div className="absolute top-0 right-0 w-24 h-24 bg-emerald-500/5 rounded-full blur-xl pointer-events-none"></div>
                 
-                {/* Visual Circle Indicator (Alternative to boring progress bars) */}
-                <div className="relative shrink-0 flex items-center justify-center w-14 h-14 bg-emerald-50 dark:bg-emerald-950/50 rounded-xl relative border border-emerald-100 dark:border-emerald-900/50">
-                  <div className="text-emerald-700 dark:text-emerald-400 font-mono text-sm font-bold flex flex-col items-center">
-                    <span className="text-[10px] text-slate-400 -mb-1 font-sans">Eff.</span>
-                    <span>{skill.percentage}%</span>
-                  </div>
+                {/* Visual Icon Indicator */}
+                <div className="relative shrink-0 flex items-center justify-center w-14 h-14 bg-emerald-50 dark:bg-emerald-950/50 rounded-xl border border-emerald-100 dark:border-emerald-900/50">
+                  {getSoftSkillIcon(skill.name)}
                 </div>
 
                 <div className="space-y-1.5">
