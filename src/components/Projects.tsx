@@ -182,27 +182,7 @@ export default function Projects() {
           })}
         </div>
 
-        {/* Integration Instructions Code Box for the user */}
-        <div className="mt-14 p-6 bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-slate-850 rounded-2xl shadow-inner">
-          <h3 className="text-sm font-mono font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5 uppercase tracking-wider mb-2.5">
-            <Sparkles className="w-4 h-4" /> Portfolio PDF Integration Guide
-          </h3>
-          <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-            To easily link your research manuscripts, chemistry lecture slide decks, or summaries to these interactive slots, find this component at:
-            <br />
-            <code className="inline-block bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-300 px-2 py-1 rounded font-mono font-semibold text-[11px] mt-1.5 select-all">
-              src/components/Projects.tsx
-            </code>
-          </p>
-          <div className="space-y-2 mt-2 bg-slate-100 dark:bg-slate-950 p-4 rounded-xl border border-slate-200/50 dark:border-slate-900 font-mono text-[11px] text-slate-600 dark:text-slate-400 whitespace-pre overflow-x-auto">
-{`// Example of binding a study document to Area 1:
-{
-  number: 1,
-  title: "1. Medicinal Chemistry in Drug Discovery",
-  pdfUrl: "/pdfs/medicinal_chem_drug_discovery_2026.pdf" // <-- Point to your asset file
-}`}
-          </div>
-        </div>
+
 
       </div>
     </section>
