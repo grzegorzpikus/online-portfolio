@@ -63,7 +63,7 @@ const MEDICINAL_CHEMISTRY_SERIES: ProjectBar[] = [
   },
   {
     number: 7,
-    title: "7. Clearance, half-life, volume of distribution",
+    title: "7. Clearance, Half-life, Volume of Distribution",
     pdfUrl: "" // <-- PASTE PDF LINK HERE (e.g., "assets/lecture7.pdf")
   },
   {
